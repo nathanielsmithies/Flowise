@@ -35,4 +35,6 @@ RUN pnpm build
 
 EXPOSE 3000
 
+RUN mkdir -p /usr/src/.flowise/logs /usr/src/.flowise/storage
+
 CMD [ "pnpm", "start" ]
